@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: rgb(28, 146, 214);
+}
+
+h2 {
+  color: rgb(240, 21, 240);
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Nav-link__li {
+  list-style: none;
+  display: flex;
+  background-color: aqua;
+  width: 5em;
+  padding: 10px, 20px;
+  margin: 5px;
+  border-radius: 2em;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 5px rgb(53, 52, 52);
+}
+
+.Nav-link__li:first-child {
+  color: red;
+}
+
+.Nav-link__li:nth-child(2) {
+  color: yellow;
+}
+
+.Nav-link__li:last-child {
+  color: green;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section article {
+  display: flex;
+  justify-content: space-between;
+}
+section article div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 217, 0);
+  height: 10vh;
+  width: 25vw;
+  box-sizing: border-box;
+  border-radius: 5em;
+  padding: 10px;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
+  box-shadow: 2px 3px 2px rgb(53, 52, 52);
+}
+
+.ovalo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 217, 0);
+  height: 10vh;
+  width: 25vw;
+  box-sizing: border-box;
+  border-radius: 5em;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
+  box-shadow: 2px 3px 2px rgb(53, 52, 52);
+}
+.ovalo .circulo {
+  display: flex;
+  background-color: rgb(255, 51, 0);
+  height: 9vh;
+  width: 9vw;
+  margin-left: -68%;
+  margin-bottom: 2px;
+  transition: margin-left 0.5s;
+}
+
+.cuadrado {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 255, 21);
+  height: 30vh;
+  width: 20vw;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-left: 30px;
+  border: 3px solid black;
+  transition: 1s;
+}
+.cuadrado.rotado{
+  transform: rotate(360deg);
+}
+.cuadrado ul {
+  display: block;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: transparent;
+}
+.cuadrado ul .neo {
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=style.css.map */
