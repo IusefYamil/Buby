@@ -1,36 +1,14 @@
-const circulo = document.getElementById('circulo');
-const circulo1 = document.getElementById('circulo1');
+const correo=document.getElementById('img_correo');
+const form = document.querySelector('.form');
 
-let isMoved = false;
-let isMoved1=false;
+form.addEventListener("submit",(event)=>{
+    event.preventDefault();
+    correo.style.left = '10%';
+    correo.style.opacity = '0';
 
-circulo.addEventListener('click', () => {
-    circulo.style.marginLeft = '68%';
-    if (isMoved) {
-        circulo.style.marginLeft = '-68%';
-        isMoved = false;
-    } else {
-        circulo.style.marginLeft = '60%';
-        isMoved = true;
-    }
-});
-
-circulo1.addEventListener('click', () => {
-    circulo1.style.marginLeft = '68%';
-    if(isMoved1){
-        circulo1.style.marginLeft = '-68%';
-        isMoved1 = false;
-        alert("Se mueve para la izquierda!!!"); 
-    }else{
-        circulo1.style.marginLeft = '60%';
-        isMoved1 = true;
-        alert("Se mueve para la derecha!!!"); 
-    }
-});
-
-const ovalada= document.getElementById('cu2');
-
-ovalada.addEventListener('click', () => {
-    ovalada.classList.toggle('rotado')
-       
-});
+    setTimeout(() => {
+        correo.style.left = '-0%';
+        correo.style.opacity = '1';
+        form.reset();
+    }, 500);
+})
